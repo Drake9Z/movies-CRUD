@@ -1,11 +1,13 @@
 import React from "react";
 
-const MovieList = ({ initialMovies }) => {
-  console.log(initialMovies);
+const MovieList = ({ moviesList, deleteMovie}) => {
+  
+
+
   return (
     <div className="container-list">
       <ul>
-        {initialMovies.map((movie) => (
+        {moviesList.map((movie) => (
           <li key={movie.id} className="movie-card">
             <div className="container-content">
             <h2>{movie.name}</h2>

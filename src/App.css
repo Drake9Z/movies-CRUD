@@ -73,4 +73,9 @@ form input {
   padding: .5rem;
   border-radius: 10px;
   margin: 10px 0;
+  cursor: pointer;
+}
+
+.movieForm button:hover{
+  scale: 1.1;
 }
