@@ -6,9 +6,30 @@ import Movieform from "./components/MovieForm"
 
 function App() {
 
+  const initialMovies = [
+    {
+      id: 1,
+      name: 'Titanic',
+      genre: 'acción',
+      duration: '2 horas',
+      release_date: '2006'
+    },
+    {
+      id: 2,
+      name: 'Titanic',
+      genre: 'acción',
+      duration: '2 horas',
+      release_date: '2006'
+    },
+  ];
+
+  const [ moviesList, setMoviesList] = useState(initialMovies);
+
   return (
     <div className='App'>
-      
+      <MovieList
+      initialMovies={initialMovies}
+      />
     </div>
   )
 }
