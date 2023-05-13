@@ -4,10 +4,10 @@ const MovieList = ({initialMovies}) => {
 
     console.log(initialMovies);
     return (
-        <div>
+        <div className='container-list'>
             <ul>
                 {initialMovies.map((movie) => (
-                    <li key={movie.id}>
+                    <li key={movie.id} className="movie-card">
                         <h2>{movie.name}</h2>
                         <p>Genero: {movie.genre}</p>
                         <p>Duración: {movie.duration}</p>
