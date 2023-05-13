@@ -2,7 +2,7 @@
 import './App.css'
 import React, {useState} from 'react'
 import MovieList from "./components/MovieList"
-import Movieform from "./components/MovieForm"
+import MovieForm from "./components/MovieForm"
 
 function App() {
 
@@ -27,6 +27,9 @@ function App() {
 
   return (
     <div className='App'>
+      <MovieForm
+      
+      />
       <MovieList
       initialMovies={initialMovies}
       />
